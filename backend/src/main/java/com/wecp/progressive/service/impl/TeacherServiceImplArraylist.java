@@ -1,8 +1,5 @@
 package com.wecp.progressive.service.impl;
 
-<<<<<<< HEAD
-public class TeacherServiceImplArraylist  {
-=======
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -45,6 +42,5 @@ public class TeacherServiceImplArraylist implements TeacherService {
         }
 
     };
->>>>>>> bf6a64124f6b2604106261c506023c1b4bf7232e
 
 }

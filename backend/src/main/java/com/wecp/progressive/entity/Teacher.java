@@ -1,9 +1,5 @@
 package com.wecp.progressive.entity;
 
-<<<<<<< HEAD
-public class Teacher {
-
-=======
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -45,6 +41,12 @@ public class Teacher implements Comparable<Teacher> {
         this.subject = subject;
         this.contactNumber = contactNumber;
         this.email = email;
+        this.yearsOfExperience = yearsOfExperience;
+    }
+
+    public Teacher(int teacher, String name, int yearsOfExperience){
+        this.teacherId = teacherId;
+        this.fullName = fullName;
         this.yearsOfExperience = yearsOfExperience;
     }
 
@@ -100,5 +102,4 @@ public class Teacher implements Comparable<Teacher> {
     public int compareTo(Teacher o) {
         return Integer.compare(this.yearsOfExperience, o.getYearsOfExperience());
     }
->>>>>>> bf6a64124f6b2604106261c506023c1b4bf7232e
 }

@@ -7,23 +7,6 @@ import java.util.List;
 
 public interface TeacherService {
 
-<<<<<<< HEAD
-    public List<Teacher> getAllTeachers();
-
-    public Integer addTeacher(Teacher teacher);
-
-    public List<Teacher> getTeacherSortedByExperience();
-
-    default void emptyArrayList() {
-    }
-
-    //Do not implement these methods in TeacherServiceImplArraylist.java class
-    default public void updateTeacher(Teacher teacher) { }
-
-    default public void deleteTeacher(int teacherId) { }
-
-    default Teacher getTeacherById(int teacherId) { return null; }
-=======
     public List<Teacher> getAllTeachers() throws Exception;
 
     public Integer addTeacher(Teacher teacher) throws Exception;
@@ -39,7 +22,6 @@ public interface TeacherService {
     default public void deleteTeacher(int teacherId)  throws Exception { }
 
     default Teacher getTeacherById(int teacherId)  throws Exception { return null; }
->>>>>>> bf6a64124f6b2604106261c506023c1b4bf7232e
 
     //Do not implement these methods in TeacherServiceImplArraylist.java and TeacherServiceImplJdbc.java class
     //Do not implement in TeacherServiceImplJpa.java until Day-13

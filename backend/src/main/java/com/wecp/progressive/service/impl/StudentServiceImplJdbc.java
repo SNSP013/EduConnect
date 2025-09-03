@@ -1,9 +1,5 @@
 package com.wecp.progressive.service.impl;
 
-<<<<<<< HEAD
-public class StudentServiceImplJdbc  {
-
-=======
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -84,5 +80,4 @@ public class StudentServiceImplJdbc implements StudentService {
         }
         return student;
     }
->>>>>>> bf6a64124f6b2604106261c506023c1b4bf7232e
 }

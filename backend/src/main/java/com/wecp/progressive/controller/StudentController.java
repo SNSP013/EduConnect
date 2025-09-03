@@ -1,44 +1,6 @@
 package com.wecp.progressive.controller;
 
 import com.wecp.progressive.entity.Student;
-<<<<<<< HEAD
-import org.springframework.http.ResponseEntity;
-
-import java.util.List;
-
-public class StudentController {
-
-    public ResponseEntity<List<Student>> getAllStudents() {
-        return null;
-    }
-
-    public ResponseEntity<Student> getStudentById(int studentId) {
-        return null;
-    }
-
-    public ResponseEntity<Integer> addStudent(Student student) {
-        return null;
-    }
-
-    public ResponseEntity<Void> updateStudent(int studentId, Student student) {
-        return null;
-    }
-
-    public ResponseEntity<Void> deleteStudent(int studentId) {
-        return null;
-    }
-
-    public ResponseEntity<List<Student>> getAllStudentFromArrayList() {
-        return null;
-    }
-
-    public ResponseEntity<Integer> addStudentToArrayList(Student student) {
-        return null;
-    }
-
-    public ResponseEntity<List<Student>> getAllStudentSortedByNameFromArrayList() {
-        return null;
-=======
 import com.wecp.progressive.service.impl.StudentServiceImplArraylist;
 import com.wecp.progressive.service.impl.StudentServiceImplJpa;
 
@@ -68,12 +30,12 @@ public class StudentController {
 
     @GetMapping
     public ResponseEntity<List<Student>> getAllStudents() {
-       try {
+        try {
             List<Student> students = studentServiceJPA.getAllStudents();
             return new ResponseEntity<>(students, HttpStatus.OK);
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
-       }
+        }
     }
 
     @GetMapping("/{studentId}")
@@ -94,8 +56,11 @@ public class StudentController {
     @PostMapping
     public ResponseEntity<Integer> addStudent(@RequestBody Student student) {
         try {
-                int studentId = studentServiceJPA.addStudent(student);
+            Integer studentId = studentServiceJPA.addStudent(student);
+            if (studentId != null) {
                 return new ResponseEntity<>(studentId, HttpStatus.CREATED);
+            }
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
@@ -107,6 +72,8 @@ public class StudentController {
             student.setStudentId(studentId);
             studentServiceJPA.updateStudent(student);
             return new ResponseEntity<>(HttpStatus.OK);
+        } catch (IllegalArgumentException e) {
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
@@ -133,7 +100,7 @@ public class StudentController {
     }
 
     @PostMapping("/toArrayList")
-    public ResponseEntity<Integer> addStudentToArrayList(Student student) {
+    public ResponseEntity<Integer> addStudentToArrayList(@RequestBody Student student) {
         int studentsListSize = studentServiceArrayList.addStudent(student);
         return new ResponseEntity<>(studentsListSize, HttpStatus.CREATED);
     }
@@ -146,6 +113,5 @@ public class StudentController {
         } else {
             return new ResponseEntity<>(sortedStudentsByName, HttpStatus.NO_CONTENT);
         }
->>>>>>> bf6a64124f6b2604106261c506023c1b4bf7232e
     }
 }
