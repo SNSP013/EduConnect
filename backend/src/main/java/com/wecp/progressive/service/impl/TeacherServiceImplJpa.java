@@ -1,8 +1,5 @@
 package com.wecp.progressive.service.impl;
 
-<<<<<<< HEAD
-public class TeacherServiceImplJpa  {
-=======
 import java.util.Collections;
 import java.util.List;
 
@@ -71,6 +68,5 @@ public class TeacherServiceImplJpa implements TeacherService {
     public Teacher getTeacherById(int teacherId) throws Exception {
         return teacherRepository.findById(teacherId).orElse(null);
     }
->>>>>>> ce4fa58d6deaf56a8d40fc79ad79f7c90ae6bf2f
 
 }

@@ -1,8 +1,5 @@
 package com.wecp.progressive.service.impl;
 
-<<<<<<< HEAD
-public class CourseServiceImplJdbc  {
-=======
 import java.util.ArrayList;
 import java.util.List;
 
@@ -68,6 +65,5 @@ public class CourseServiceImplJdbc  implements CourseService{
             System.out.println("Failed to delete course "+e.getMessage());
         }
     }
->>>>>>> ce4fa58d6deaf56a8d40fc79ad79f7c90ae6bf2f
 
 }

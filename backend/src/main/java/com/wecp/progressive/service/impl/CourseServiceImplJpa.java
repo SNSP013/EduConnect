@@ -1,9 +1,5 @@
 package com.wecp.progressive.service.impl;
 
-<<<<<<< HEAD
-public class CourseServiceImplJpa  {
-
-=======
 import java.util.ArrayList;
 import java.util.List;
 
@@ -93,5 +89,4 @@ public class CourseServiceImplJpa implements CourseService {
         }
         return coursesByTeacher;
     }
->>>>>>> ce4fa58d6deaf56a8d40fc79ad79f7c90ae6bf2f
 }
