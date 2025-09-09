@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 15668bcf1f6dd835ca25ab5e5f19e5b5570ab204
 package com.wecp.progressive.config;
 
 import java.io.IOException;
@@ -32,4 +35,8 @@ public class DatabaseConnectionManager {
         String password = properties.getProperty("spring.datasource.password");
         return DriverManager.getConnection(url, user, password);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 15668bcf1f6dd835ca25ab5e5f19e5b5570ab204
