@@ -1,9 +1,6 @@
 package com.wecp.progressive.controller;
 
-<<<<<<< HEAD
 import com.wecp.progressive.dto.TeacherDTO;
-=======
->>>>>>> da1cb8999d2fc76f0ac0c528f49bbf6d17c8f446
 import com.wecp.progressive.entity.Teacher;
 import com.wecp.progressive.service.impl.TeacherServiceImplJpa;
 
@@ -65,18 +62,11 @@ public class TeacherController {
     }
 
     @PutMapping("/{teacherId}")
-<<<<<<< HEAD
     public ResponseEntity<Void> updateTeacher(@PathVariable int teacherId, @RequestBody TeacherDTO teacherDTO) {
         try {
             teacherDTO.setTeacherId(teacherId);
             // teacherService.updateTeacher(teacher);
             teacherService.modifyTeacherDetails(teacherDTO);
-=======
-    public ResponseEntity<Void> updateTeacher(@PathVariable int teacherId, @RequestBody Teacher teacher) {
-        try {
-            teacher.setTeacherId(teacherId);
-            teacherService.updateTeacher(teacher);
->>>>>>> da1cb8999d2fc76f0ac0c528f49bbf6d17c8f446
             return new ResponseEntity<>(HttpStatus.OK);
         } catch (IllegalArgumentException e) {
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);

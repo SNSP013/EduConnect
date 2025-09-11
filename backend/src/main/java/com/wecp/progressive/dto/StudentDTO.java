@@ -12,7 +12,6 @@ public class StudentDTO {
     private String email;
     private String address;
 
-<<<<<<< HEAD
     public int getStudentId() {
         return studentId;
     }
@@ -77,6 +76,4 @@ public class StudentDTO {
         this.address = address;
     }
 
-=======
->>>>>>> da1cb8999d2fc76f0ac0c528f49bbf6d17c8f446
 }

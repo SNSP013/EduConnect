@@ -1,9 +1,6 @@
 package com.wecp.progressive.controller;
 
-<<<<<<< HEAD
 import com.wecp.progressive.dto.StudentDTO;
-=======
->>>>>>> da1cb8999d2fc76f0ac0c528f49bbf6d17c8f446
 import com.wecp.progressive.entity.Student;
 import com.wecp.progressive.service.impl.StudentServiceImplArraylist;
 import com.wecp.progressive.service.impl.StudentServiceImplJpa;
@@ -43,11 +40,7 @@ public class StudentController {
     }
 
     @GetMapping("/{studentId}")
-<<<<<<< HEAD
     public ResponseEntity<Student> getStudentById(@PathVariable Integer studentId) {
-=======
-    public ResponseEntity<Student> getStudentById(@PathVariable int studentId) {
->>>>>>> da1cb8999d2fc76f0ac0c528f49bbf6d17c8f446
         try {
             Student student = studentServiceJPA.getStudentById(studentId);
             if (student != null) {
@@ -75,18 +68,11 @@ public class StudentController {
     }
 
     @PutMapping("/{studentId}")
-<<<<<<< HEAD
     public ResponseEntity<Void> updateStudent(@PathVariable int studentId, @RequestBody StudentDTO studentDTO) {
         try {
             studentDTO.setStudentId(studentId);
             // studentServiceJPA.updateStudent(student);
             studentServiceJPA.modifyStudentDetails(studentDTO);
-=======
-    public ResponseEntity<Void> updateStudent(@PathVariable int studentId, @RequestBody Student student) {
-        try {
-            student.setStudentId(studentId);
-            studentServiceJPA.updateStudent(student);
->>>>>>> da1cb8999d2fc76f0ac0c528f49bbf6d17c8f446
             return new ResponseEntity<>(HttpStatus.OK);
         } catch (IllegalArgumentException e) {
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);

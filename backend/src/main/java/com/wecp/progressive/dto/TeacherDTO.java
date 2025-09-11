@@ -10,7 +10,6 @@ public class TeacherDTO {
     private String subject;
     private Integer yearsOfExperience;
 
-<<<<<<< HEAD
     public int getTeacherId() {
         return teacherId;
     }
@@ -75,6 +74,4 @@ public class TeacherDTO {
         this.yearsOfExperience = yearsOfExperience;
     }
 
-=======
->>>>>>> da1cb8999d2fc76f0ac0c528f49bbf6d17c8f446
 }

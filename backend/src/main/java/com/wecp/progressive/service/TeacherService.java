@@ -26,8 +26,4 @@ public interface TeacherService {
     //Do not implement these methods in TeacherServiceImplArraylist.java and TeacherServiceImplJdbc.java class
     //Do not implement in TeacherServiceImplJpa.java until Day-13
     default public void modifyTeacherDetails(TeacherDTO teacherDTO) { }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> da1cb8999d2fc76f0ac0c528f49bbf6d17c8f446
