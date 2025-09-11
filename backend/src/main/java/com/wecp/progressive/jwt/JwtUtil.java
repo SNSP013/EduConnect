@@ -1,6 +1,5 @@
 package com.wecp.progressive.jwt;
 
-<<<<<<< HEAD
 import java.security.Key;
 import java.util.Date;
 import java.util.HashMap;
@@ -67,8 +66,3 @@ public class JwtUtil {
         return extractClaim(token, Claims::getExpiration);
     }
 }
-=======
-public class JwtUtil {
-
-}
->>>>>>> f345a5af1d0b14401062d26fc802862e4ec7b6a7

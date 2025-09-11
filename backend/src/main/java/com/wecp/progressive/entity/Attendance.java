@@ -1,9 +1,5 @@
 package com.wecp.progressive.entity;
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> f345a5af1d0b14401062d26fc802862e4ec7b6a7
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -104,11 +100,5 @@ public class Attendance {
     public void setCreatedAt(Date createdAt) {
         this.createdAt = createdAt;
     }   
-<<<<<<< HEAD
-=======
-=======
-public class Attendance {
 
->>>>>>> 15668bcf1f6dd835ca25ab5e5f19e5b5570ab204
->>>>>>> f345a5af1d0b14401062d26fc802862e4ec7b6a7
 }
