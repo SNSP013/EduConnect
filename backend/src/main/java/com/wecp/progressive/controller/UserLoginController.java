@@ -1,5 +1,6 @@
 package com.wecp.progressive.controller;
 
+<<<<<<< HEAD
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -80,5 +81,23 @@ public class UserLoginController {
         } catch (Exception e) {
             return new ResponseEntity<>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
         }
+=======
+import com.wecp.progressive.dto.LoginRequest;
+import com.wecp.progressive.dto.LoginResponse;
+import com.wecp.progressive.dto.UserRegistrationDTO;
+import org.springframework.http.ResponseEntity;
+
+public class UserLoginController {
+    public ResponseEntity<?> registerUser(UserRegistrationDTO registrationDTO) {
+        return null;
+    }
+
+    public ResponseEntity<LoginResponse> loginUser(LoginRequest loginRequest) {
+        return null;
+    }
+
+    public ResponseEntity<?> getUserDetails(int userId) {
+        return null;
+>>>>>>> da1cb8999d2fc76f0ac0c528f49bbf6d17c8f446
     }
 }

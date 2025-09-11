@@ -58,7 +58,11 @@ public class TeacherServiceImplJpa implements TeacherService {
 
     @Override
     public void deleteTeacher(int teacherId) throws Exception {
+<<<<<<< HEAD
         Teacher deletedTeacher = teacherRepository.findById(teacherId).orElseThrow();
+=======
+        Teacher deletedTeacher = teacherRepository.findById(teacherId).orElse(null);
+>>>>>>> da1cb8999d2fc76f0ac0c528f49bbf6d17c8f446
         if (deletedTeacher != null) {
             teacherRepository.delete(deletedTeacher);
         }
