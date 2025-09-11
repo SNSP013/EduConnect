@@ -13,6 +13,7 @@ public class UserRegistrationDTO {
     private Date dateOfBirth;
     private String subject;
     private Integer yearsOfExperience;
+<<<<<<< HEAD
 
     public String getUsername() {
         return username;
@@ -94,4 +95,6 @@ public class UserRegistrationDTO {
         this.yearsOfExperience = yearsOfExperience;
     }
 
+=======
+>>>>>>> f345a5af1d0b14401062d26fc802862e4ec7b6a7
 }

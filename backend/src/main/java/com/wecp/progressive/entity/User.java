@@ -1,5 +1,6 @@
 package com.wecp.progressive.entity;
 
+<<<<<<< HEAD
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -99,4 +100,8 @@ public class User {
         this.teacher = teacher;
     }
 
+=======
+public class User {
+
+>>>>>>> f345a5af1d0b14401062d26fc802862e4ec7b6a7
 }
