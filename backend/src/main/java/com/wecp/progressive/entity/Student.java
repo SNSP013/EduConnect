@@ -1,4 +1,3 @@
-
 package com.wecp.progressive.entity;
 
 import java.util.Date;
@@ -17,7 +16,7 @@ public class Student implements Comparable<Student>{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "student_id")
-    private Integer studentId;
+    private int studentId;
 
     @Column(name = "full_name")    
     private String fullName;
@@ -37,7 +36,7 @@ public class Student implements Comparable<Student>{
     public Student() {
     }
 
-    public Student(Integer studentId, String fullName, Date dateOfBirth, String contactNumber, String email,
+    public Student(int studentId, String fullName, Date dateOfBirth, String contactNumber, String email,
             String address) {
         this.studentId = studentId;
         this.fullName = fullName;
@@ -47,11 +46,11 @@ public class Student implements Comparable<Student>{
         this.address = address;
     }
 
-    public Integer getStudentId() {
+    public int getStudentId() {
         return studentId;
     }
 
-    public void setStudentId(Integer studentId) {
+    public void setStudentId(int studentId) {
         this.studentId = studentId;
     }
 

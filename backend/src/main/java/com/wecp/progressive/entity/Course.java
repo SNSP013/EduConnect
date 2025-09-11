@@ -17,7 +17,7 @@ public class Course {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "course_id")
-    private Integer courseId;
+    private int courseId;
 
     @Column(name = "course_name")
     private String courseName;
@@ -26,7 +26,7 @@ public class Course {
     private String description;
 
     // @Column(name = "teacher_id")
-    // private Integer teacherId;
+    // private int teacherId;
 
     @ManyToOne(cascade = CascadeType.MERGE)
     @JoinColumn(name = "teacher_id")
@@ -35,14 +35,14 @@ public class Course {
     public Course() {
     }
 
-    public Course(Integer courseId, String courseName, String description, Teacher teacher) {
+    public Course(int courseId, String courseName, String description, Teacher teacher) {
         this.courseId = courseId;
         this.courseName = courseName;
         this.description = description;
         this.teacher = teacher;
     }
 
-    // public Course(Integer courseId, String courseName, String description, Integer teacherId, Teacher teacher) {
+    // public Course(int courseId, String courseName, String description, int teacherId, Teacher teacher) {
     //     this.courseId = courseId;
     //     this.courseName = courseName;
     //     this.description = description;
@@ -54,7 +54,7 @@ public class Course {
         return courseId;
     }
 
-    public void setCourseId(Integer courseId) {
+    public void setCourseId(int courseId) {
         this.courseId = courseId;
     }
 
@@ -74,11 +74,11 @@ public class Course {
         this.description = description;
     }
 
-    // public Integer getTeacherId() {
+    // public int getTeacherId() {
     //     return teacherId;
     // }
 
-    // public void setTeacherId(Integer teacherId) {
+    // public void setTeacherId(int teacherId) {
     //     this.teacherId = teacherId;
     // }
 
