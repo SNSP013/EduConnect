@@ -7,6 +7,7 @@ import java.util.List;
 
 public interface StudentService {
 
+<<<<<<< HEAD
     List<Student> getAllStudents();
 
     Integer addStudent(Student student);
@@ -22,6 +23,22 @@ public interface StudentService {
     default void deleteStudent(int studentId) {}
 
     default Student getStudentById(int studentId) {
+=======
+    List<Student> getAllStudents() throws Exception;
+
+    Integer addStudent(Student student) throws Exception;
+
+    List<Student> getAllStudentSortedByName() throws Exception;
+
+    default void emptyArrayList() throws Exception {}
+
+    //Do not implement these methods in StudentServiceImplArraylist.java class
+    default void updateStudent(Student student) throws Exception {}
+
+    default void deleteStudent(int studentId) throws Exception {}
+
+    default Student getStudentById(int studentId) throws Exception {
+>>>>>>> 707a60c5868e29d4b27ae6d1f816fe8baf72574e
         return null;
     }
 
