@@ -1,12 +1,5 @@
 package com.wecp.progressive.dao;
 
-<<<<<<< HEAD
-
-public class TeacherDAOImpl {
-
-
-
-=======
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -112,5 +105,4 @@ public class TeacherDAOImpl implements TeacherDAO{
         }
         return teachers;
     }
->>>>>>> 707a60c5868e29d4b27ae6d1f816fe8baf72574e
 }

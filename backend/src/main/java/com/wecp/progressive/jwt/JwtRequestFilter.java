@@ -1,9 +1,5 @@
 package com.wecp.progressive.jwt;
 
-<<<<<<< HEAD
-public class JwtRequestFilter  {
-
-=======
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -59,5 +55,4 @@ public class JwtRequestFilter extends OncePerRequestFilter {
 
         chain.doFilter(request, response);
     }
->>>>>>> 707a60c5868e29d4b27ae6d1f816fe8baf72574e
 }

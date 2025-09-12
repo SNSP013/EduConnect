@@ -1,44 +1,5 @@
 package com.wecp.progressive.controller;
 
-<<<<<<< HEAD
-import com.wecp.progressive.entity.Student;
-import org.springframework.http.ResponseEntity;
-
-import java.util.List;
-
-public class StudentController {
-
-    public ResponseEntity<List<Student>> getAllStudents() {
-        return null;
-    }
-
-    public ResponseEntity<Student> getStudentById(int studentId) {
-        return null;
-    }
-
-    public ResponseEntity<Integer> addStudent(Student student) {
-        return null;
-    }
-
-    public ResponseEntity<Void> updateStudent(int studentId, Student student) {
-        return null;
-    }
-
-    public ResponseEntity<Void> deleteStudent(int studentId) {
-        return null;
-    }
-
-    public ResponseEntity<List<Student>> getAllStudentFromArrayList() {
-        return null;
-    }
-
-    public ResponseEntity<Integer> addStudentToArrayList(Student student) {
-        return null;
-    }
-
-    public ResponseEntity<List<Student>> getAllStudentSortedByNameFromArrayList() {
-        return null;
-=======
 import com.wecp.progressive.dto.StudentDTO;
 import com.wecp.progressive.entity.Student;
 import com.wecp.progressive.service.impl.StudentServiceImplArraylist;
@@ -154,6 +115,5 @@ public class StudentController {
         } else {
             return new ResponseEntity<>(sortedStudentsByName, HttpStatus.NO_CONTENT);
         }
->>>>>>> 707a60c5868e29d4b27ae6d1f816fe8baf72574e
     }
 }

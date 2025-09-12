@@ -1,8 +1,5 @@
 package com.wecp.progressive.service.impl;
 
-<<<<<<< HEAD
-public class AttendanceServiceImpl  {
-=======
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -56,6 +53,5 @@ public class AttendanceServiceImpl implements AttendanceService {
         List<Attendance> attendancesByCourse = attendanceRepository.findByCourse_CourseId(courseId);
         return attendancesByCourse;
     }
->>>>>>> 707a60c5868e29d4b27ae6d1f816fe8baf72574e
 
 }

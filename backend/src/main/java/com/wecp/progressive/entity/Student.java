@@ -1,9 +1,5 @@
 package com.wecp.progressive.entity;
 
-<<<<<<< HEAD
-public class Student {
-
-=======
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -102,5 +98,4 @@ public class Student implements Comparable<Student>{
     public int compareTo(Student o) {
         return this.fullName.compareTo(o.getFullName());
     }
->>>>>>> 707a60c5868e29d4b27ae6d1f816fe8baf72574e
 }

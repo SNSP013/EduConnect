@@ -1,9 +1,5 @@
 package com.wecp.progressive.entity;
 
-<<<<<<< HEAD
-public class Enrollment {
-
-=======
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -83,5 +79,4 @@ public class Enrollment {
     public void setEnrollmentDate(Date enrollmentDate) {
         this.enrollmentDate = enrollmentDate;
     }
->>>>>>> 707a60c5868e29d4b27ae6d1f816fe8baf72574e
 }

@@ -1,36 +1,6 @@
 package com.wecp.progressive.controller;
 
 import com.wecp.progressive.entity.Enrollment;
-<<<<<<< HEAD
-import org.springframework.http.ResponseEntity;
-
-import java.util.List;
-
-public class EnrollmentController {
-
-    public ResponseEntity<List<Enrollment>> getAllEnrollments() {
-        return null;
-    }
-
-    public ResponseEntity<Integer> createEnrollment(Enrollment enrollment) {
-        return null;
-    }
-
-    public ResponseEntity<Void> updateEnrollment(int enrollmentId, Enrollment enrollment) {
-        return null;
-    }
-
-    public ResponseEntity<Enrollment> getEnrollmentById(int enrollmentId) {
-        return null;
-    }
-
-    public ResponseEntity<List<Enrollment>> getAllEnrollmentsByStudent(int studentId) {
-        return null;
-    }
-
-    public ResponseEntity<List<Enrollment>> getAllEnrollmentsByCourse(int courseId) {
-        return null;
-=======
 import com.wecp.progressive.service.EnrollmentService;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -123,7 +93,6 @@ public class EnrollmentController {
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
->>>>>>> 707a60c5868e29d4b27ae6d1f816fe8baf72574e
     }
 
 }

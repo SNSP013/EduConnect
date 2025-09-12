@@ -1,9 +1,5 @@
 package com.wecp.progressive.service.impl;
 
-<<<<<<< HEAD
-public class EnrollmentServiceImpl  {
-
-=======
 import java.text.ParseException;
 import java.util.List;
 
@@ -64,5 +60,4 @@ public class EnrollmentServiceImpl implements EnrollmentService{
         List<Enrollment> enrollments = enrollmentRepository.findAllByCourse_CourseId(courseId);
         return enrollments;
     }
->>>>>>> 707a60c5868e29d4b27ae6d1f816fe8baf72574e
 }

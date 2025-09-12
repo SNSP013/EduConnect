@@ -1,17 +1,11 @@
 package com.wecp.progressive.dto;
 
-<<<<<<< HEAD
-=======
 import com.fasterxml.jackson.annotation.JsonProperty;
 
->>>>>>> 707a60c5868e29d4b27ae6d1f816fe8baf72574e
 public class LoginResponse {
    private String token;
    private String roles;
    private Integer userId;
-<<<<<<< HEAD
-   private Integer referenceId;
-=======
    private Integer studentId;
    private Integer teacherId;
    private Integer referenceId;
@@ -84,5 +78,4 @@ public class LoginResponse {
       this.referenceId = referenceId;
    }
 
->>>>>>> 707a60c5868e29d4b27ae6d1f816fe8baf72574e
 }

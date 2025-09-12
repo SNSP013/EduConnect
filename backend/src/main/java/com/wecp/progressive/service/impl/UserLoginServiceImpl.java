@@ -1,26 +1,5 @@
 package com.wecp.progressive.service.impl;
 
-<<<<<<< HEAD
-import com.wecp.progressive.dto.UserRegistrationDTO;
-import com.wecp.progressive.entity.User;
-
-public class UserLoginServiceImpl {
-
-    User createUser(User user) {
-        return null;
-    }
-
-    User getUserByUsername(String username) {
-        return null;
-    }
-
-    void registerUser(UserRegistrationDTO userRegistrationDTO) {
-
-    }
-
-    User getUserDetails(int userId) {
-        return null;
-=======
 import java.util.Collections;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -74,6 +53,5 @@ public class UserLoginServiceImpl {
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException{
         User user = userRepository.findByUsername(username);
         return new org.springframework.security.core.userdetails.User(user.getUsername(), user.getPassword(), Collections.singleton(new SimpleGrantedAuthority(user.getRole())));
->>>>>>> 707a60c5868e29d4b27ae6d1f816fe8baf72574e
     }
 }

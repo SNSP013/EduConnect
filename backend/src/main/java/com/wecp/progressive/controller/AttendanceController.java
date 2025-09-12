@@ -1,32 +1,6 @@
 package com.wecp.progressive.controller;
 
 import com.wecp.progressive.entity.Attendance;
-<<<<<<< HEAD
-import org.springframework.http.ResponseEntity;
-
-import java.util.List;
-
-public class AttendanceController {
-
-    public ResponseEntity<List<Attendance>> getAllAttendance() {
-        return null;
-    }
-
-    public ResponseEntity<Attendance> createAttendance(Attendance attendance) {
-        return null;
-    }
-
-    public ResponseEntity<Integer> deleteAttendance(int attendanceId) {
-        return null;
-    }
-
-    public ResponseEntity<List<Attendance>> getAllAttendanceByStudent(int studentId) {
-        return null;
-    }
-
-    public ResponseEntity<List<Attendance>> getAllAttendanceByCourse(int courseId) {
-        return null;
-=======
 import com.wecp.progressive.service.AttendanceService;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -97,6 +71,5 @@ public class AttendanceController {
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
->>>>>>> 707a60c5868e29d4b27ae6d1f816fe8baf72574e
     }
 }

@@ -1,9 +1,5 @@
 package com.wecp.progressive.entity;
 
-<<<<<<< HEAD
-public class Course {
-
-=======
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -94,5 +90,4 @@ public class Course {
         this.teacher = teacher;
     }
 
->>>>>>> 707a60c5868e29d4b27ae6d1f816fe8baf72574e
 }

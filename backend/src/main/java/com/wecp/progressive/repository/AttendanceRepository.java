@@ -1,9 +1,5 @@
 package com.wecp.progressive.repository;
 
-<<<<<<< HEAD
-
-public interface AttendanceRepository {
-=======
 import java.util.Date;
 import java.util.List;
 import java.util.Optional;
@@ -20,5 +16,4 @@ public interface AttendanceRepository extends JpaRepository<Attendance, Integer>
 
     // public void deleteByCourseId(int courseId);
     // public void deleteByStudentId(int studentId);
->>>>>>> 707a60c5868e29d4b27ae6d1f816fe8baf72574e
 }

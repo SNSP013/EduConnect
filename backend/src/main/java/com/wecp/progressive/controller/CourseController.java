@@ -1,35 +1,6 @@
 package com.wecp.progressive.controller;
 
 import com.wecp.progressive.entity.Course;
-<<<<<<< HEAD
-import org.springframework.http.ResponseEntity;
-
-import java.util.List;
-
-public class CourseController {
-    public ResponseEntity<List<Course>> getAllCourses() {
-        return null;
-    }
-
-    public ResponseEntity<Course> getCourseById(int courseId) {
-        return null;
-    }
-
-    public ResponseEntity<Integer> addCourse(Course course) {
-        return null;
-    }
-
-    public ResponseEntity<Void> updateCourse(int courseId, Course course) {
-        return null;
-    }
-
-    public ResponseEntity<Void> deleteCourse(int courseId) {
-        return null;
-    }
-
-    public ResponseEntity<List<Course>> getAllCourseByTeacherId(int teacherId) {
-        return null;
-=======
 import com.wecp.progressive.service.impl.CourseServiceImplJpa;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -124,6 +95,5 @@ public class CourseController {
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
->>>>>>> 707a60c5868e29d4b27ae6d1f816fe8baf72574e
     }
 }

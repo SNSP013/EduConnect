@@ -1,36 +1,5 @@
 package com.wecp.progressive.controller;
 
-<<<<<<< HEAD
-import com.wecp.progressive.entity.Teacher;
-import org.springframework.http.ResponseEntity;
-
-import java.util.List;
-
-public class TeacherController {
-
-    public ResponseEntity<List<Teacher>> getAllTeachers() {
-        return null;
-    }
-
-    public ResponseEntity<Teacher> getTeacherById(int teacherId) {
-        return null;
-    }
-
-    public ResponseEntity<Integer> addTeacher(Teacher teacher) {
-        return null;
-    }
-
-    public ResponseEntity<Void> updateTeacher(int teacherId, Teacher teacher) {
-        return null;
-    }
-
-    public ResponseEntity<Void> deleteTeacher(int teacherId) {
-        return null;
-    }
-
-    public ResponseEntity<List<Teacher>> getTeacherSortedByYearsOfExperience() {
-        return null;
-=======
 import com.wecp.progressive.dto.TeacherDTO;
 import com.wecp.progressive.entity.Teacher;
 import com.wecp.progressive.service.impl.TeacherServiceImplJpa;
@@ -124,6 +93,5 @@ public class TeacherController {
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
->>>>>>> 707a60c5868e29d4b27ae6d1f816fe8baf72574e
     }
 }
