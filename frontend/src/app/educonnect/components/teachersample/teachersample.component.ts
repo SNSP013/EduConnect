@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Teacher } from '../../models/Teacher';
@@ -27,4 +28,10 @@ export class TeacherSampleComponent {
   logTeacherAttributes(): void {
     this.teacher.logAttributes();
   }
+=======
+
+export class TeacherSampleComponent  {
+
+  
+>>>>>>> 529d0154115457f875d66b7565be669ba7ab27ce
 }
