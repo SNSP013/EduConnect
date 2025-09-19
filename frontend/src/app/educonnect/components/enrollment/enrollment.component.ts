@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
@@ -44,9 +43,4 @@ export class EnrollmentComponent {
         this.errorMessage = '';
         this.enrollmentForm.reset();
     }
-=======
-
-export class EnrollmentComponent {
-
->>>>>>> be72409ccde0d5703f6c5ed17d93a55913ca1807
 }
